@@ -1,0 +1,15 @@
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.deps.json
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.runtimeconfig.json
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.runtimeconfig.dev.json
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.dll
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.pdb
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.dll
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.pdb
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.csproj.AssemblyReference.cache
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.AssemblyInfoInputs.cache
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.AssemblyInfo.cs
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.csproj.CoreCompileInputs.cache
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.dll
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.pdb
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.genruntimeconfig.cache

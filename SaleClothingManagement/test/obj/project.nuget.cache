@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "s7wXEWbEr1i3YXTQwFpXjyXDk9Vv0CGs2uCtfflh8IGuO8W9GlyLh1ohzlxhpNLGDSVrCTK95LmjpLXRu8/27A==",
+  "success": true,
+  "projectFilePath": "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\test\\test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}

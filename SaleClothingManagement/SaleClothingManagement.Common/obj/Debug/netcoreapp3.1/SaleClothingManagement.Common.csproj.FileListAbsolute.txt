@@ -1,0 +1,13 @@
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.deps.json
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.runtimeconfig.json
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.runtimeconfig.dev.json
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.dll
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.pdb
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.csproj.AssemblyReference.cache
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.AssemblyInfoInputs.cache
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.AssemblyInfo.cs
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.csproj.CoreCompileInputs.cache
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.dll
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.pdb
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.genruntimeconfig.cache

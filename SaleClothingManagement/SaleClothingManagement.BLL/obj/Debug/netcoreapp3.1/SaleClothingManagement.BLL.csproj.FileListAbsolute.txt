@@ -1,0 +1,17 @@
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.BLL.deps.json
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.BLL.runtimeconfig.json
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.BLL.runtimeconfig.dev.json
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.BLL.dll
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.BLL.pdb
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.dll
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.dll
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.pdb
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.pdb
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.csproj.AssemblyReference.cache
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.AssemblyInfoInputs.cache
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.AssemblyInfo.cs
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.csproj.CoreCompileInputs.cache
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.dll
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.pdb
+D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.genruntimeconfig.cache
