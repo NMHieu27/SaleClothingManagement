@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj": {}
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj": {}
   },
   "projects": {
-    "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj": {
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj",
         "projectName": "SaleClothingManagement.Common",
-        "projectPath": "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj",
+        "projectPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.Common\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

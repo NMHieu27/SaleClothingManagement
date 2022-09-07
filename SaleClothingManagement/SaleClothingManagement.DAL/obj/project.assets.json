@@ -5823,11 +5823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.DAL\\SaleClothingManagement.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.DAL\\SaleClothingManagement.DAL.csproj",
       "projectName": "SaleClothingManagement.DAL",
-      "projectPath": "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.DAL\\SaleClothingManagement.DAL.csproj",
+      "projectPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.DAL\\SaleClothingManagement.DAL.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.DAL\\obj\\",
+      "outputPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5844,8 +5844,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj": {
-              "projectPath": "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj"
+            "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj": {
+              "projectPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JYQHIsmcieGRBKNvHodru8mILwE49hgNVIv/hqSGZdmpVo6IXn78KZEEGy5OqrwV/nKctl7DKnZyABCYhwSX1Q==",
+  "dgSpecHash": "rEJFbHQs0rIp/cBtYr4iNhCGaWjl5/wfliMR/IZJ3gcwlMVzrVqItfv0Gjai9HtX/pN7EKuHPDBH86Azg9tIYQ==",
   "success": true,
-  "projectFilePath": "D:\\BTL Lập trình cơ sở dữ liệu\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
