@@ -32,4 +32,3 @@ C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\Sal
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.dll
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.pdb
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.genruntimeconfig.cache
-C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.csproj.CopyComplete

@@ -74,5 +74,14 @@ namespace SaleClothingManagement.Web.Controllers
                 return BadRequest(res);
         }
 
+        [HttpPost("search-employee")]
+        public IActionResult SearchProduct([FromBody] SearchEmployeeReq searchEmployeeReq)
+        {
+            var res = new SingleRsp();
+            var employees = employeeSvc.SearchEmployee(searchEmployeeReq);
+            res.Data = employees;
+            return Ok(res);
+        }
+
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wK+4Ju4WyLZm+hhkzffX+2l1J3RijC+ilRxEGoIqsv9FMrOTieMEBJdVLr4XBnpLJjPfRqooAJJkZrXpAzbpmQ==",
+  "dgSpecHash": "GVJxQVzjtHAioXtSF5kDL65sY0BPPYrEvlAhVnBKA5RSdmek+tTkfqaL0hENqb3Fv994VCswHJ5AkQKsm6XX6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Web\\SaleClothingManagement.Web.csproj",
   "expectedPackageFiles": [
@@ -63,6 +63,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.linq.dynamic.core\\1.2.20\\system.linq.dynamic.core.1.2.20.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",

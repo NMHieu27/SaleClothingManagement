@@ -16,9 +16,9 @@ namespace SaleClothingManagement.DAL.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime? Dob { get; set; }
-        public string IdentityNumber { get; set; }
         public DateTime? HireDate { get; set; }
         public string Avatar { get; set; }
+        public bool? Active { get; set; }
 
         public virtual ICollection<Bill> Bills { get; set; }
     }

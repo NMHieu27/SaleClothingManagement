@@ -82,12 +82,18 @@ namespace SaleClothingManagement.DAL
                     catch (Exception ex)
                     {
                         tran.Rollback();
-                        res.SetError(ex.StackTrace);
+                        res.SetError("Warning","Can not hard delete --> soft delete (set active = false)");
+                        var newContext = new ClothingShopContext();
+                        var em = newContext.Employees.FirstOrDefault(e => e.EmployeeId == id);
+                        em.Active = false;
+                        newContext.SaveChanges();
                     }
                 }
             }
             return res;
         }
+
+        
         #endregion
     }
 }

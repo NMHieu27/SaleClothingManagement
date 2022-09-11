@@ -45,6 +45,10 @@ namespace SaleClothingManagement.DAL.Models
 
                 entity.Property(e => e.BillId).HasColumnName("BillID");
 
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
                 entity.Property(e => e.CreatedDate)
                     .HasColumnType("date")
                     .HasColumnName("Created_date");
@@ -130,8 +134,6 @@ namespace SaleClothingManagement.DAL.Models
                     .HasColumnType("date")
                     .HasColumnName("Created_date");
 
-                entity.Property(e => e.Value).HasColumnName("Value");
-
                 entity.Property(e => e.FromDate)
                     .HasColumnType("date")
                     .HasColumnName("From_date");
@@ -149,6 +151,8 @@ namespace SaleClothingManagement.DAL.Models
 
                 entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
 
+                entity.Property(e => e.Active).HasDefaultValueSql("((1))");
+
                 entity.Property(e => e.Avatar).HasMaxLength(50);
 
                 entity.Property(e => e.Dob).HasColumnType("date");
@@ -156,8 +160,6 @@ namespace SaleClothingManagement.DAL.Models
                 entity.Property(e => e.FirstName).HasMaxLength(50);
 
                 entity.Property(e => e.HireDate).HasColumnType("date");
-
-                entity.Property(e => e.IdentityNumber).HasMaxLength(12);
 
                 entity.Property(e => e.LastName).HasMaxLength(50);
             });
