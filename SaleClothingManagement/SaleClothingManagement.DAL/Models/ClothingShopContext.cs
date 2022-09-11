@@ -80,6 +80,12 @@ namespace SaleClothingManagement.DAL.Models
 
                 entity.Property(e => e.ProductId).HasColumnName("ProductID");
 
+                entity.HasOne(d => d.Bill)
+                    .WithMany(p => p.BillDetails)
+                    .HasForeignKey(d => d.BillId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_BillDetail_Bill");
+
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.BillDetails)
                     .HasForeignKey(d => d.ProductId)
