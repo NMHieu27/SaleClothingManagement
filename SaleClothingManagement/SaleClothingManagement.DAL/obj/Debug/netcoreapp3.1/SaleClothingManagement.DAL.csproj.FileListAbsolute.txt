@@ -13,3 +13,19 @@ D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingMana
 D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.dll
 D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.pdb
 D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.genruntimeconfig.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.deps.json
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.runtimeconfig.json
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.runtimeconfig.dev.json
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.dll
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.pdb
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.dll
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.pdb
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.AssemblyInfoInputs.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.AssemblyInfo.cs
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.dll
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.pdb
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.genruntimeconfig.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.DAL\obj\Debug\netcoreapp3.1\SaleClothingManagement.DAL.csproj.CopyComplete

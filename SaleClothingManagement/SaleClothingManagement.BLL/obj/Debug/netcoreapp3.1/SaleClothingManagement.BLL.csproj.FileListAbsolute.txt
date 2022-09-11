@@ -15,3 +15,21 @@ D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingMana
 D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.dll
 D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.pdb
 D:\BTL Lập trình cơ sở dữ liệu\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.genruntimeconfig.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.BLL.deps.json
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.BLL.runtimeconfig.json
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.BLL.runtimeconfig.dev.json
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.BLL.dll
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.BLL.pdb
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.dll
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.dll
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.pdb
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\bin\Debug\netcoreapp3.1\SaleClothingManagement.DAL.pdb
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.AssemblyInfoInputs.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.AssemblyInfo.cs
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.dll
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.pdb
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.genruntimeconfig.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.BLL\obj\Debug\netcoreapp3.1\SaleClothingManagement.BLL.csproj.CopyComplete

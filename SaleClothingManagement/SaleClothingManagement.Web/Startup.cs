@@ -36,8 +36,7 @@ namespace SaleClothingManagement.Web
                 TermsOfService = new Uri("http://appointvn.com"),
                 Contact = new OpenApiContact
                 {
-                    Name = "Hieu Nguyen",
-                    Email = "1951052055hieu@ou.edu.vn"
+                    Name = "Sale Clothing Management"
                 },
                 License = new OpenApiLicense
                 {
@@ -53,8 +52,7 @@ namespace SaleClothingManagement.Web
                 TermsOfService = new Uri("http://appointvn.com"),
                 Contact = new OpenApiContact
                 {
-                    Name = "Trang Nguyen",
-                    Email = "phuongtrang06@gmail.com"
+                    Name = "Sale Clothing Management"
                 },
                 License = new OpenApiLicense
                 {

@@ -146,3 +146,4 @@ C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\Sal
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.dll
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.pdb
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.genruntimeconfig.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.csproj.CopyComplete
