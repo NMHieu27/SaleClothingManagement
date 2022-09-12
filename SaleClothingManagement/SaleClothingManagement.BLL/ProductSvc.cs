@@ -7,6 +7,7 @@ using SaleClothingManagement.DAL.Models;
 using SaleClothingManagement.Common.Rsp;
 using SaleClothingManagement.Common.Req;
 using SaleClothingManagement.Common.Req.ModelReq;
+using System.Linq;
 
 namespace SaleClothingManagement.BLL
 {
@@ -27,7 +28,19 @@ namespace SaleClothingManagement.BLL
         public SingleRsp FindWithConditions(Dictionary<string, string> param)
         {
             var res = new SingleRsp();
-            res.Data = productRep.FindByConditions(param);
+            var data = productRep.FindByConditions(param);
+            if (data.Count() == 0)
+                res.Data = null;
+            else
+                res.Data = data;
+            
+            return res;
+        }
+
+        public SingleRsp StatRemaining()
+        {
+            var res = new SingleRsp();
+            res.Data = _rep.StatRemaining();
             return res;
         }
 

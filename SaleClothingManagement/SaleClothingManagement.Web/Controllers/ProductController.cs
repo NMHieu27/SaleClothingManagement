@@ -5,6 +5,7 @@ using SaleClothingManagement.Common.Req.ModelReq;
 using SaleClothingManagement.Common.Rsp;
 using SaleClothingManagement.DAL.Models;
 using SaleClothingManagement.DAL.Models.Mapper;
+using SaleClothingManagement.DAL.Specification;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,6 +57,10 @@ namespace SaleClothingManagement.Web.Controllers
         {
             var res = new SingleRsp();
             res = productSvc.Read(id);
+
+            if (res.Data == null)
+                return NoContent();
+
             return Ok(res);
         }
 
@@ -63,7 +68,18 @@ namespace SaleClothingManagement.Web.Controllers
         public IActionResult FindWithConditions([FromBody] Dictionary<string, string> param)
         {
             var res = new SingleRsp();
+
+            List<Func<Product, bool>> funcs = ProductSpecification.GetListCondition(param);
+            if (funcs.Count() == 0)
+            {
+                res.Data = "Invalid match key parameter";
+                return BadRequest(res);
+            }
+
             res = productSvc.FindWithConditions(param);
+            if (res.Data == null)
+                return NoContent();
+
             return Ok(res);
         }
 
@@ -109,6 +125,22 @@ namespace SaleClothingManagement.Web.Controllers
                 return Ok(res);
             else
                 return BadRequest(res);
+        }
+
+        [HttpGet("stat/remaining")]
+        public IActionResult Report()
+        {
+            try
+            {
+                var res = new SingleRsp();
+                res = productSvc.StatRemaining();
+
+                return Ok(res);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
 
     }

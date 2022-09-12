@@ -11,8 +11,11 @@ namespace SaleClothingManagement.DAL.Specification
         {
             List<Func<Product, bool>> funcs = new List<Func<Product, bool>>();
 
-            if (param.ContainsKey("name"))
-                funcs.Add(ProductSpecification.ContainName(param["name"].ToLower()));
+            if (param.ContainsKey("containName"))
+                funcs.Add(ProductSpecification.ContainName(param["containName"].ToLower()));
+
+            if (param.ContainsKey("equalName"))
+                funcs.Add(ProductSpecification.EqualName(param["equalName"].ToLower()));
 
             if (param.ContainsKey("lessThanPrice"))
                 funcs.Add(ProductSpecification.LessThanPrice(param["lessThanPrice"].ToLower()));
@@ -44,13 +47,13 @@ namespace SaleClothingManagement.DAL.Specification
         public static Func<Product, bool> LessThanPrice(string priceStr)
         {
             decimal price = decimal.Parse(priceStr);
-            return s => s.Price < price && s.Price != null;
+            return s => s.Price <= price && s.Price != null;
         }
 
         public static Func<Product, bool> GreaterThanPrice(string priceStr)
         {
             decimal price = decimal.Parse(priceStr);
-            return s => s.Price > price && s.Price != null;
+            return s => s.Price >= price && s.Price != null;
         }
 
         // REMAINING

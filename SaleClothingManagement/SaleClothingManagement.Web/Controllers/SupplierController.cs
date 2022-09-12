@@ -5,6 +5,7 @@ using SaleClothingManagement.Common.Req.ModelReq;
 using SaleClothingManagement.Common.Rsp;
 using SaleClothingManagement.DAL.Models;
 using SaleClothingManagement.DAL.Models.Mapper;
+using SaleClothingManagement.DAL.Specification;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,14 +56,33 @@ namespace SaleClothingManagement.Web.Controllers
         {
             var res = new SingleRsp();
             res = supplierSvc.Read(id);
-            return Ok(res);
+
+            if (res == null)
+                return NoContent();
+            else
+                return Ok(res);
         }
 
         [HttpGet("find-by-conditions")]
         public IActionResult FindWithConditions([FromBody] Dictionary<string, string> param)
         {
+            //var res = new SingleRsp();
+            //res = supplierSvc.FindWithConditions(param);
+            //return Ok(res);
+
             var res = new SingleRsp();
+
+            List<Func<Supplier, bool>> funcs = SupplierSpecification.GetListCondition(param);
+            if (funcs.Count() == 0)
+            {
+                res.Data = "Invalid match key parameter";
+                return BadRequest(res);
+            }
+
             res = supplierSvc.FindWithConditions(param);
+            if (res.Data == null)
+                return NoContent();
+
             return Ok(res);
         }
 
@@ -118,6 +138,24 @@ namespace SaleClothingManagement.Web.Controllers
                 return BadRequest(res);
             }
 
+        }
+
+        [HttpGet("stat/country-product-count")]
+        public IActionResult StatCountryProductCount()
+        {
+            var res = new SingleRsp();
+            res = supplierSvc.StatCountryCount();
+
+            return Ok(res);
+        }
+
+        [HttpGet("stat/product-count")]
+        public IActionResult StatProductCount()
+        {
+            var res = new SingleRsp();
+            res = supplierSvc.StatProductCount();
+
+            return Ok(res);
         }
 
     }

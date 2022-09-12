@@ -5,6 +5,7 @@ using SaleClothingManagement.DAL;
 using SaleClothingManagement.DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SaleClothingManagement.BLL
@@ -20,21 +21,47 @@ namespace SaleClothingManagement.BLL
         public override SingleRsp Read(int id)
         {
             var res = new SingleRsp();
-            res.Data = _rep.Read(id);
-            return res;
+            var data = _rep.Read(id);
+            
+            if (data != null)
+            {
+                res.Data = data;
+                return res;
+            }
+            else
+                return null;
         }
 
         public SingleRsp FindWithConditions(Dictionary<string, string> param)
         {
             var res = new SingleRsp();
-            res.Data = supplierRep.FindByConditions(param);
+            var data = supplierRep.FindByConditions(param);
+            if (data.Count() == 0)
+                res.Data = null;
+            else
+                res.Data = data;
+
+            return res;
+        }
+
+        public SingleRsp StatCountryCount()
+        {
+            var res = new SingleRsp();
+            res.Data = _rep.StatCountryCount();
+            return res;
+        }
+
+        public SingleRsp StatProductCount()
+        {
+            var res = new SingleRsp();
+            res.Data = _rep.StatProductCount();
             return res;
         }
 
         public SingleRsp Delete(int id)
         {
             var res = new SingleRsp();
-            res = _rep.Remove(id);
+            res = _rep.Delete(id);
             return res;
         }
 

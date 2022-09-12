@@ -21,6 +21,30 @@ namespace SaleClothingManagement.DAL
             return res;
         }
 
+        public List<Product> FindBySupplierID(int id)
+        {
+            var res = new SingleRsp();
+            using (var context = new ClothingShopContext())
+            {
+                using (var trans = context.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        var products = context.Products.Where(p => p.SupplierId == id).ToList();
+
+                        return products;
+                    }
+                    catch (Exception ex)
+                    {
+                        trans.Rollback();
+                        res.SetError(ex.StackTrace);
+                    }
+                }
+            }
+
+            return null;
+        }
+
         public List<Product> FindByConditions(Dictionary<string, string> param)
         {
             var res = new SingleRsp();
@@ -121,6 +145,37 @@ namespace SaleClothingManagement.DAL
             }
 
             return res;
+        }
+
+        public Dictionary<string, string> StatRemaining()
+        {
+            var res = new SingleRsp();
+            using (var context = new ClothingShopContext())
+            {
+                using (var trans = context.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        var products = context.Products.ToList();
+                        Dictionary<string, string> result = new Dictionary<string, string>();
+
+                        var amountOutOfStock = products.Where(s => s.Remaining == 0).Count();
+                        result.Add("out_of_stock", amountOutOfStock.ToString());
+
+                        var amountInStock = products.Where(s => s.Remaining != 0).Count();
+                        result.Add("in_stock", amountInStock.ToString());
+
+                        return result;
+                    }
+                    catch (Exception ex)
+                    {
+                        trans.Rollback();
+                        res.SetError(ex.StackTrace);
+                    }
+                }
+            }
+
+            return null;
         }
 
     }

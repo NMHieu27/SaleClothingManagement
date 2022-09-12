@@ -12,6 +12,7 @@ namespace SaleClothingManagement.DAL.Models
         public double? Total { get; set; }
         public int? Amount { get; set; }
 
+        public virtual Bill Bill { get; set; }
         public virtual Product Product { get; set; }
     }
 }

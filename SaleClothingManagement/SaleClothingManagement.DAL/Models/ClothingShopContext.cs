@@ -31,7 +31,7 @@ namespace SaleClothingManagement.DAL.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=LIGHTNING;Initial Catalog=ClothingShop;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=ClothingShop;Integrated Security=True");
             }
         }
 
@@ -44,6 +44,10 @@ namespace SaleClothingManagement.DAL.Models
                 entity.ToTable("Bill");
 
                 entity.Property(e => e.BillId).HasColumnName("BillID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
 
                 entity.Property(e => e.CreatedDate)
                     .HasColumnType("date")
@@ -76,6 +80,12 @@ namespace SaleClothingManagement.DAL.Models
 
                 entity.Property(e => e.ProductId).HasColumnName("ProductID");
 
+                entity.HasOne(d => d.Bill)
+                    .WithMany(p => p.BillDetails)
+                    .HasForeignKey(d => d.BillId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_BillDetail_Bill");
+
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.BillDetails)
                     .HasForeignKey(d => d.ProductId)
@@ -89,9 +99,11 @@ namespace SaleClothingManagement.DAL.Models
 
                 entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
 
-                entity.Property(e => e.Description)
-                    .HasMaxLength(50)
-                    .HasColumnName("description");
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.Description).HasMaxLength(50);
 
                 entity.Property(e => e.DiscountId).HasColumnName("DiscountID");
 
@@ -126,11 +138,13 @@ namespace SaleClothingManagement.DAL.Models
 
                 entity.Property(e => e.DiscountId).HasColumnName("DiscountID");
 
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
                 entity.Property(e => e.CreatedDate)
                     .HasColumnType("date")
                     .HasColumnName("Created_date");
-
-                entity.Property(e => e.Discount1).HasColumnName("Discount");
 
                 entity.Property(e => e.FromDate)
                     .HasColumnType("date")
@@ -149,15 +163,15 @@ namespace SaleClothingManagement.DAL.Models
 
                 entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
 
-                entity.Property(e => e.Avata).HasMaxLength(50);
+                entity.Property(e => e.Active).HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.Avatar).HasMaxLength(50);
 
                 entity.Property(e => e.Dob).HasColumnType("date");
 
                 entity.Property(e => e.FirstName).HasMaxLength(50);
 
                 entity.Property(e => e.HireDate).HasColumnType("date");
-
-                entity.Property(e => e.IdentityNumber).HasMaxLength(12);
 
                 entity.Property(e => e.LastName).HasMaxLength(50);
             });
