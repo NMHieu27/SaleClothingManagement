@@ -99,6 +99,10 @@ namespace SaleClothingManagement.DAL.Models
 
                 entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
 
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
                 entity.Property(e => e.Description).HasMaxLength(50);
 
                 entity.Property(e => e.DiscountId).HasColumnName("DiscountID");
@@ -117,6 +121,10 @@ namespace SaleClothingManagement.DAL.Models
 
                 entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
 
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+
                 entity.Property(e => e.Address).HasMaxLength(50);
 
                 entity.Property(e => e.Dob).HasColumnType("date");
@@ -133,6 +141,10 @@ namespace SaleClothingManagement.DAL.Models
                 entity.ToTable("Discount");
 
                 entity.Property(e => e.DiscountId).HasColumnName("DiscountID");
+
+                entity.Property(e => e.Active)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
 
                 entity.Property(e => e.CreatedDate)
                     .HasColumnType("date")

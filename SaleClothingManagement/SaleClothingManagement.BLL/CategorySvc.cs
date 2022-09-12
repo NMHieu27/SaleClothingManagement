@@ -1,5 +1,5 @@
 ﻿using SaleClothingManagement.Common.BLL;
-using SaleClothingManagement.Common.Req.ModelReq;
+using SaleClothingManagement.Common.Req.CategoryReq;
 using SaleClothingManagement.Common.Rsp;
 using SaleClothingManagement.DAL;
 using SaleClothingManagement.DAL.Models;

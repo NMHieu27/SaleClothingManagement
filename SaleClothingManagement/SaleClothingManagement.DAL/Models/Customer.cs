@@ -18,6 +18,7 @@ namespace SaleClothingManagement.DAL.Models
         public string Address { get; set; }
         public string Email { get; set; }
         public DateTime? Dob { get; set; }
+        public bool? Active { get; set; }
 
         public virtual ICollection<Bill> Bills { get; set; }
     }

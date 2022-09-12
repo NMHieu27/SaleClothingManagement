@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SaleClothingManagement.Common.Req.ModelReq
+namespace SaleClothingManagement.Common.Req.CategoryReq
 {
-    public class SearchDiscountReq
+    public class SearchCategoryReq
     {
         public string keyword { get; set; }
         public int page { get; set; }

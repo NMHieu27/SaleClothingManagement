@@ -20,7 +20,6 @@ namespace SaleClothingManagement.DAL.Models
         public DateTime? ToDate { get; set; }
         public bool? Active { get; set; }
 
-
         public virtual ICollection<Category> Categories { get; set; }
     }
 }

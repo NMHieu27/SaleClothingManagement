@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SaleClothingManagement.Common.Req.ModelReq
+namespace SaleClothingManagement.Common.Req.DiscountReq
 {
     public class DiscountReqUpdate
     {

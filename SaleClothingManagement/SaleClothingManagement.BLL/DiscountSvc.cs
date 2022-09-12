@@ -6,7 +6,7 @@ using System.Text;
 using SaleClothingManagement.DAL.Models;
 using SaleClothingManagement.Common.Rsp;
 using SaleClothingManagement.Common.Req;
-using SaleClothingManagement.Common.Req.ModelReq;
+using SaleClothingManagement.Common.Req.DiscountReq;
 using System.Linq;
 
 namespace SaleClothingManagement.BLL

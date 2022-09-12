@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using SaleClothingManagement.BLL;
 using SaleClothingManagement.Common.Req;
 using SaleClothingManagement.Common.Rsp;
-using SaleClothingManagement.Common.Req.ModelReq;
+using SaleClothingManagement.Common.Req.DiscountReq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
