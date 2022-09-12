@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace SaleClothingManagement.DAL.Models
+namespace SaleClothingManagement.Web.Models
 {
     public partial class Discount
     {
@@ -19,7 +19,6 @@ namespace SaleClothingManagement.DAL.Models
         public DateTime? FromDate { get; set; }
         public DateTime? ToDate { get; set; }
         public bool? Active { get; set; }
-
 
         public virtual ICollection<Category> Categories { get; set; }
     }

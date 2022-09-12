@@ -20,7 +20,7 @@ namespace SaleClothingManagement.Web.Controllers
         {
             billSvc = new BillSvc();
         }
-        [HttpPost("get-by-id")]
+        [HttpGet("get-by-id")]
         public IActionResult getBillById([FromBody] SimpleReq req)
         {
             var res = new SingleRsp();
@@ -29,7 +29,7 @@ namespace SaleClothingManagement.Web.Controllers
 
         }
 
-        [HttpPost("get-all")]
+        [HttpGet("get-all")]
         public IActionResult getAllBill()
         {
             var res = new SingleRsp();
