@@ -1,5 +1,6 @@
 ﻿using SaleClothingManagement.Common.BLL;
 using SaleClothingManagement.Common.Req;
+using SaleClothingManagement.Common.Req.EmployeeReq;
 using SaleClothingManagement.Common.Rsp;
 using SaleClothingManagement.DAL;
 using SaleClothingManagement.DAL.Models;
@@ -13,7 +14,7 @@ namespace SaleClothingManagement.BLL
 {
     public class EmployeeSvc : GenericSvc<EmployeeRep, Employee>
     {
-        EmployeeRep req = new EmployeeRep();
+        EmployeeRep rep = new EmployeeRep();
         #region -- Overrides -- 
         public override SingleRsp Read(int id)
         {
@@ -26,7 +27,12 @@ namespace SaleClothingManagement.BLL
         #endregion
 
         #region -- Methods --
-        public EmployeeSvc() { }
+        public SingleRsp ReadAllEmployees()
+        {
+            var res = new SingleRsp();
+            res.Data = rep.ReadAllEmployees();
+            return res;
+        }
 
         public SingleRsp CreateEmployee(EmployeeReq employeeReq)
         {
@@ -38,7 +44,7 @@ namespace SaleClothingManagement.BLL
             employee.HireDate = employeeReq.HireDate;
             employee.Avatar = employeeReq.Avata;
             employee.Active = employeeReq.Active;
-            res = req.CreateEmployee(employee);
+            res = rep.CreateEmployee(employee);
             return res;
         }
 
@@ -53,13 +59,14 @@ namespace SaleClothingManagement.BLL
             else
             {
                 Employee employee = new Employee();
+                employee.EmployeeId = employeeReq.EmployeeId;
                 employee.FirstName = employeeReq.FirstName;
                 employee.LastName = employeeReq.LastName;
                 employee.Dob = employeeReq.Dob;
                 employee.HireDate = employeeReq.HireDate;
                 employee.Avatar = employeeReq.Avata;
                 employee.Active = employeeReq.Active;
-                res = req.UpdateEmployee(employee);
+                res = rep.UpdateEmployee(employee);
             }
             return res;
         }
@@ -79,28 +86,29 @@ namespace SaleClothingManagement.BLL
             return res;
         }
 
-        public object SearchEmployee (SearchEmployeeReq searchEmployeeReq)
+        public SingleRsp SearchEmployee (SearchEmployeeReq searchEmployeeReq)
         {
             //string conds = "x =>";
-            //if (!string.IsNullOrEmpty(searchEmployeeReq.FirstName)){
-            //    conds += conds.Contains("x =>") ? "x.FirstName.Contains(searchEmployeeReq.FirstName)" 
+            //if (!string.IsNullOrEmpty(searchEmployeeReq.FirstName))
+            //{
+            //    conds += conds.Length <= 5 ? "x.FirstName.Contains(searchEmployeeReq.FirstName)"
             //        : " && x.FirstName.Contains(searchEmployeeReq.FirstName)";
             //}
             //if (!string.IsNullOrEmpty(searchEmployeeReq.LastName))
             //{
-            //    conds += conds.Contains("x =>") ? "x.LastName.Contains(searchEmployeeReq.LastName)" 
+            //    conds += conds.Length <= 5 ? "x.LastName.Contains(searchEmployeeReq.LastName)"
             //        : " && x.LastName.Contains(searchEmployeeReq.LastName)";
             //}
             //if (!string.IsNullOrEmpty(searchEmployeeReq.Dob.ToString()))
             //{
-            //    conds += conds.Contains("x =>") ? "x.Dob.Year == searchEmployeeReq.Dob.Year "
-            //        +"&& x.Dob.Month == searchEmployeeReq.Dob.Month && x.Dob.Day == searchEmployeeReq.Dob.Day"
+            //    conds += conds.Length <= 5 ? "x.Dob.Year == searchEmployeeReq.Dob.Year "
+            //        + "&& x.Dob.Month == searchEmployeeReq.Dob.Month && x.Dob.Day == searchEmployeeReq.Dob.Day"
             //        : " && x.Dob.Year == searchEmployeeReq.Dob.Year "
             //        + "&& x.Dob.Month == searchEmployeeReq.Dob.Month && x.Dob.Day == searchEmployeeReq.Dob.Day";
             //}
             //if (!string.IsNullOrEmpty(searchEmployeeReq.HireDate.ToString()))
             //{
-            //    conds += conds.Contains("x =>") ? "x.HireDate.Year == searchEmployeeReq.HireDate.Year "
+            //    conds += conds.Length <= 5 ? "x.HireDate.Year == searchEmployeeReq.HireDate.Year "
             //        + "&& x.HireDate.Month == searchEmployeeReq.HireDate.Month && x.HireDate.Day == searchEmployeeReq.HireDate.Day"
             //        : " && x.HireDate.Year == searchEmployeeReq.HireDate.Year "
             //        + "&& x.HireDate.Month == searchEmployeeReq.HireDate.Month && x.HireDate.Day == searchEmployeeReq.HireDate.Day";
@@ -108,30 +116,33 @@ namespace SaleClothingManagement.BLL
             //}
             //if (searchEmployeeReq.Active.ToString() == "true" || searchEmployeeReq.Active.ToString() == "false")
             //{
-            //    conds += conds.Contains("x =>") ? "x.Active == searchEmployeeReq.Active "
+            //    conds += conds.Length <= 5 ? "x.Active == searchEmployeeReq.Active "
             //        : " && x.Active == searchEmployeeReq.Active";
             //}
             //var employees = All.Where(conds);
 
-            var employees = All.Where(e => e.FirstName.Contains(searchEmployeeReq.FirstName));
-            var offset = (searchEmployeeReq.Page - 1) * searchEmployeeReq.Size;
-            var total = employees.Count();
-            int totalPage = (total % searchEmployeeReq.Size) == 0 ? (int)(total / searchEmployeeReq.Size) :
-                (int)(1 + (total / searchEmployeeReq.Size));
-            var data = employees.OrderBy(x => x.EmployeeId).Skip(offset).Take(searchEmployeeReq.Size).ToList();
-            var res = new
+            var res = new SingleRsp();
+            var employees = rep.SearchEmployee(searchEmployeeReq.FirstName);
+
+            int offset = (searchEmployeeReq.Page - 1) * searchEmployeeReq.Size;
+            int eCount = employees.Count();
+            int totalPage = (eCount % searchEmployeeReq.Size) == 0 ? (eCount / searchEmployeeReq.Size) :
+                (1 + (eCount / searchEmployeeReq.Size));
+            var e = new
             {
-                Data = data,
-                TotalRecord = total,
-                TotalPages = totalPage,
+                Data = employees.OrderBy(x => x.EmployeeId).Skip(offset).Take(searchEmployeeReq.Size).ToList(),
                 Page = searchEmployeeReq.Page,
                 Size = searchEmployeeReq.Size
-
             };
-
+            res.Data = e;
             return res;
+        }
 
-
+        public SingleRsp TopEmployee(BaseStatsReq baseStatsReq)
+        {
+            var res = new SingleRsp();
+            res = rep.TopEmployee(baseStatsReq.Top, baseStatsReq.Month, baseStatsReq.Year);
+            return res;
         }
         #endregion
     }

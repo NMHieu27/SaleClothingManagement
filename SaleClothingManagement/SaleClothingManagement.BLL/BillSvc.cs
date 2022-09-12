@@ -1,4 +1,5 @@
 ﻿using SaleClothingManagement.Common.BLL;
+using SaleClothingManagement.Common.Req;
 using SaleClothingManagement.Common.Req.BillReq;
 using SaleClothingManagement.Common.Rsp;
 using SaleClothingManagement.DAL;
@@ -12,7 +13,7 @@ namespace SaleClothingManagement.BLL
 {
     public class BillSvc : GenericSvc<BillRep, Bill>
     {
-        BillRep req = new BillRep();
+        BillRep rep = new BillRep();
         #region -- Overrides -- 
         public override SingleRsp Read(int id)
         {
@@ -25,7 +26,12 @@ namespace SaleClothingManagement.BLL
         #endregion
 
         #region -- Methods --
-        public BillSvc() { }
+        public SingleRsp ReadAllBills()
+        {
+            var res = new SingleRsp();
+            res.Data = rep.ReadAllBills();
+            return res;
+        }
 
         public SingleRsp CreateBill(BillReq billReq)
         {
@@ -49,7 +55,7 @@ namespace SaleClothingManagement.BLL
                 bill.CustumerId = billReq.CustumerId;
                 bill.CreatedDate = billReq.CreatedDate;
                 bill.Active = billReq.Active;
-                res = req.CreateBill(bill);
+                res = rep.CreateBill(bill);
             }
             else
             {
@@ -83,11 +89,12 @@ namespace SaleClothingManagement.BLL
                 if (flag)
                 {
                     Bill bill = new Bill();
+                    bill.BillId = billReq.BillId;
                     bill.EmployeeId = billReq.EmployeeId;
                     bill.CustumerId = billReq.CustumerId;
                     bill.CreatedDate = billReq.CreatedDate;
                     bill.Active = billReq.Active;
-                    res = req.UpdateBill(bill);
+                    res = rep.UpdateBill(bill);
                 }
                 else
                 {
@@ -112,25 +119,22 @@ namespace SaleClothingManagement.BLL
             return res;
         }
 
-        public object SearchBill(SearchBillReq searchBillReq)
+        public SingleRsp SearchBill(SearchBillReq searchBillReq)
         {
-           
-            var Bills = All.Where(e => e.CustumerId == searchBillReq.CustumerId);
-            var offset = (searchBillReq.Page - 1) * searchBillReq.Size;
-            var total = Bills.Count();
-            int totalPage = (total % searchBillReq.Size) == 0 ? (int)(total / searchBillReq.Size) :
-                (int)(1 + (total / searchBillReq.Size));
-            var data = Bills.OrderBy(x => x.BillId).Skip(offset).Take(searchBillReq.Size).ToList();
-            var res = new
+            var res = new SingleRsp();
+            var Bills = rep.SearchBill(searchBillReq.CustumerId);
+            int offset = (searchBillReq.Page - 1) * searchBillReq.Size;
+            int bCount = Bills.Count();
+            int totalPage = (bCount % searchBillReq.Size) == 0 ?(bCount / searchBillReq.Size) :
+                (1 + (bCount / searchBillReq.Size));
+            var b = new
             {
-                Data = data,
-                TotalRecord = total,
-                TotalPages = totalPage,
+                Data = Bills.OrderBy(x => x.BillId).Skip(offset).Take(searchBillReq.Size).ToList(),
                 Page = searchBillReq.Page,
                 Size = searchBillReq.Size
 
             };
-
+            res.Data = b;
             return res;
 
 
@@ -155,6 +159,13 @@ namespace SaleClothingManagement.BLL
                 return true;
             }
             return false;
+        }
+
+        public SingleRsp TopBill(BaseStatsReq baseStatsReq)
+        {
+            var res = new SingleRsp();
+            res = rep.TopBill(baseStatsReq.Top, baseStatsReq.Month, baseStatsReq.Year);
+            return res;
         }
     }
 }

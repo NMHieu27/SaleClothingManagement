@@ -99,9 +99,7 @@ namespace SaleClothingManagement.DAL.Models
 
                 entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
 
-                entity.Property(e => e.Description)
-                    .HasMaxLength(50)
-                    .HasColumnName("description");
+                entity.Property(e => e.Description).HasMaxLength(50);
 
                 entity.Property(e => e.DiscountId).HasColumnName("DiscountID");
 

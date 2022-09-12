@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SaleClothingManagement.Common.Req
+namespace SaleClothingManagement.Common.Req.EmployeeReq
 {
     public class EmployeeReq
     {

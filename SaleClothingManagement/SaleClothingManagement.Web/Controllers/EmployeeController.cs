@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SaleClothingManagement.BLL;
 using SaleClothingManagement.Common.Req;
+using SaleClothingManagement.Common.Req.EmployeeReq;
 using SaleClothingManagement.Common.Rsp;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,7 @@ namespace SaleClothingManagement.Web.Controllers
         public IActionResult getAllEmployee()
         {
             var res = new SingleRsp();
-            res.Data = employeeSvc.All;
+            res = employeeSvc.ReadAllEmployees();
             return Ok(res);
         }
 
@@ -74,12 +75,19 @@ namespace SaleClothingManagement.Web.Controllers
                 return BadRequest(res);
         }
 
-        [HttpPost("search-employee")]
+        [HttpPost("search-employee-by-firstname")]
         public IActionResult SearchProduct([FromBody] SearchEmployeeReq searchEmployeeReq)
         {
             var res = new SingleRsp();
-            var employees = employeeSvc.SearchEmployee(searchEmployeeReq);
-            res.Data = employees;
+            res  = employeeSvc.SearchEmployee(searchEmployeeReq);
+            return Ok(res);
+        }
+
+        [HttpPost("get-top-employee-by-month-year")]
+        public IActionResult TopEmployee([FromBody] BaseStatsReq employeeStatsReq)
+        {
+            var res = new SingleRsp();
+            res = employeeSvc.TopEmployee(employeeStatsReq);
             return Ok(res);
         }
 

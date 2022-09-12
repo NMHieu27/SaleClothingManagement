@@ -33,7 +33,7 @@ namespace SaleClothingManagement.Web.Controllers
         public IActionResult getAllBill()
         {
             var res = new SingleRsp();
-            res.Data = billSvc.All;
+            res = billSvc.ReadAllBills();
             return Ok(res);
         }
 
@@ -75,14 +75,20 @@ namespace SaleClothingManagement.Web.Controllers
                 return BadRequest(res);
         }
 
-        [HttpPost("search-bill")]
+        [HttpPost("search-bill-by-customerid")]
         public IActionResult SearchProduct([FromBody] SearchBillReq searchBillReq)
         {
             var res = new SingleRsp();
-            var employees = billSvc.SearchBill(searchBillReq);
-            res.Data = employees;
+            res = billSvc.SearchBill(searchBillReq);
             return Ok(res);
         }
 
+        [HttpPost("get-top-bill-by-month-year")]
+        public IActionResult TopEmployee([FromBody] BaseStatsReq billStatsReq)
+        {
+            var res = new SingleRsp();
+            res = billSvc.TopBill(billStatsReq);
+            return Ok(res);
+        }
     }
 }
