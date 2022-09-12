@@ -137,7 +137,6 @@ C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\Sal
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.AssemblyInfoInputs.cache
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.AssemblyInfo.cs
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.csproj.CoreCompileInputs.cache
-C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\staticwebassets\SaleClothingManagement.Web.StaticWebAssets.Manifest.cache
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\staticwebassets\SaleClothingManagement.Web.StaticWebAssets.xml
@@ -146,3 +145,6 @@ C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\Sal
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.dll
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.pdb
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.genruntimeconfig.cache
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.csproj.CopyComplete
+C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Web\obj\Debug\netcoreapp3.1\SaleClothingManagement.Web.MvcApplicationPartsAssemblyInfo.cs
