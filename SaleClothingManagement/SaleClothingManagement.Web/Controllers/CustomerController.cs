@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SaleClothingManagement.BLL;
+using SaleClothingManagement.Common.CustomerReq;
 using SaleClothingManagement.Common.Req;
 using SaleClothingManagement.Common.Rsp;
 using System;
