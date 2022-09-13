@@ -64,7 +64,7 @@ namespace SaleClothingManagement.Web.Controllers
             return Ok(res);
         }
 
-        [HttpGet("find-by-conditions")]
+        [HttpPost("find-by-conditions")]
         public IActionResult FindWithConditions([FromBody] Dictionary<string, string> param)
         {
             var res = new SingleRsp();

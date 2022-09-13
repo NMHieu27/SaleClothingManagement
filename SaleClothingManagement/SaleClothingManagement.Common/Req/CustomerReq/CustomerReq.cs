@@ -12,5 +12,6 @@ namespace SaleClothingManagement.Common.CustomerReq
         public string Address { get; set; }
         public string Email { get; set; }
         public DateTime? Dob { get; set; }
+        public bool? Active { get; set; }
     }
 }

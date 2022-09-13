@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using SaleClothingManagement.BLL;
 using SaleClothingManagement.Common.BillDetailReq;
 using SaleClothingManagement.Common.Req;
+using SaleClothingManagement.Common.Req.BillDetailReq;
 using SaleClothingManagement.Common.Rsp;
 using System;
 using System.Collections.Generic;
@@ -67,5 +68,13 @@ namespace SaleClothingManagement.Web.Controllers
             var res = billDetailSvc.UpdateBillDetail(reqBilldetail);
             return Ok(res);
         }
-    }
+
+		[HttpPost("get-year-revenue")]
+		public IActionResult YearRevenue([FromBody] YearRevenueReq yearRevenueReq)
+		{
+			var res = new SingleRsp();
+			res = billDetailSvc.YearRevenue(yearRevenueReq);
+			return Ok(res);
+		}
+	}
 }

@@ -23,3 +23,16 @@ C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\Sal
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.dll
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.pdb
 C:\Users\Asus\OneDrive\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.genruntimeconfig.cache
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.deps.json
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.runtimeconfig.json
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.runtimeconfig.dev.json
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.dll
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\bin\Debug\netcoreapp3.1\SaleClothingManagement.Common.pdb
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.csproj.AssemblyReference.cache
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.AssemblyInfoInputs.cache
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.AssemblyInfo.cs
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.csproj.CoreCompileInputs.cache
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.dll
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.pdb
+C:\Users\Linh\Desktop\SaleClothingManagement\SaleClothingManagement\SaleClothingManagement.Common\obj\Debug\netcoreapp3.1\SaleClothingManagement.Common.genruntimeconfig.cache

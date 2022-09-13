@@ -20,7 +20,7 @@ namespace SaleClothingManagement.Web.Controllers
         {
             billSvc = new BillSvc();
         }
-        [HttpGet("get-by-id")]
+        [HttpPost("get-by-id")]
         public IActionResult getBillById([FromBody] SimpleReq req)
         {
             var res = new SingleRsp();

@@ -99,5 +99,42 @@ namespace SaleClothingManagement.DAL
 		{
 			return All.Where(x => x.Fullname.Contains(Keyword)).ToList();
 		}
+
+        public SingleRsp ProspectCustomer(int top, int month, int year)
+        {
+            var res = new SingleRsp();
+            using (var context = new ClothingShopContext())
+            {
+                var prospectCustomer = (from bd in context.BillDetails
+                                        where
+                                          bd.Bill.CreatedDate.Value.Month == month &&
+                                          bd.Bill.CreatedDate.Value.Year == year
+                                        group new
+                                        {
+                                            bd.Bill.Custumer,
+                                            bd.Bill,
+                                            bd
+                                        } by new
+                                        {
+                                            bd.Bill.Custumer.CustomerId,
+                                            bd.Bill.Custumer.Fullname,
+                                            Month = (int?)bd.Bill.CreatedDate.Value.Month,
+                                            Year = (int?)bd.Bill.CreatedDate.Value.Year
+                                        } into g
+                                        orderby
+                                          g.Sum(p => p.bd.Total) descending
+                                        select new
+                                        {
+                                            g.Key.CustomerId,
+                                            g.Key.Fullname,
+                                            So_luong_san_pham_mua = (int?)g.Sum(p => p.bd.Amount),
+                                            Tong_tien = (double?)g.Sum(p => p.bd.Total),
+                                            Thang = g.Key.Month,
+                                            Nam = g.Key.Year
+                                        }).Take(top).ToList();
+                res.Data = prospectCustomer;
+            }
+            return res;
+        }
     }
 }

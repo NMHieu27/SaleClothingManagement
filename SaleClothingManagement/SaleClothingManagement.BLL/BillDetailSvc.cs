@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SaleClothingManagement.Common.Req.BillDetailReq;
 
 namespace SaleClothingManagement.BLL
 {
@@ -74,10 +75,10 @@ namespace SaleClothingManagement.BLL
 						billDetail.Amount = billDetailReq.Amount;
 						var category = context.Categories.FirstOrDefault(c => c.CategoryId == product.CategoryId);						
 						var discount = context.Discounts.FirstOrDefault(d => d.DiscountId == category.DiscountId);
-						var total = discount.Value * billDetailReq.Amount;
+						var total = (float)((decimal)(discount.Value * billDetailReq.Amount)*product.Price);
 						billDetail.Total = total;
-						//billDetail.Total = billDetailReq.Total;
-						res = billDetailRep.CreateBillDetail(billDetail);
+						product.Remaining -= billDetail.Amount;
+						res = billDetailRep.CreateBillDetail(billDetail, product);
 					}
             return res;
         }
@@ -101,5 +102,11 @@ namespace SaleClothingManagement.BLL
 			}
             return res;
         }
-    }
+		public SingleRsp YearRevenue(YearRevenueReq yearRevenueReq)
+		{
+			var res = new SingleRsp();
+			res = billDetailRep.YearRevenue(yearRevenueReq.Year);
+			return res;
+		}
+	}
 }

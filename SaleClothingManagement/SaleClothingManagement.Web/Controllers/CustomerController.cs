@@ -83,5 +83,12 @@ namespace SaleClothingManagement.Web.Controllers
                 return BadRequest(res);
         }
 
+        [HttpPost("get-top-customer")]
+        public IActionResult ProspectCustomer([FromBody] BaseStatsReq baseStatsReq)
+        {
+            var res = new SingleRsp();
+            res = customerSvc.ProspectCustomer(baseStatsReq);
+            return Ok(res);
+        }
     }
 }

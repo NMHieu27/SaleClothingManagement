@@ -5879,19 +5879,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\Linh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.DAL\\SaleClothingManagement.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Linh\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.DAL\\SaleClothingManagement.DAL.csproj",
       "projectName": "SaleClothingManagement.DAL",
-      "projectPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.DAL\\SaleClothingManagement.DAL.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.DAL\\obj\\",
+      "projectPath": "C:\\Users\\Linh\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.DAL\\SaleClothingManagement.DAL.csproj",
+      "packagesPath": "C:\\Users\\Linh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Linh\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Linh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5905,8 +5905,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj": {
-              "projectPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj"
+            "C:\\Users\\Linh\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj": {
+              "projectPath": "C:\\Users\\Linh\\Desktop\\SaleClothingManagement\\SaleClothingManagement\\SaleClothingManagement.Common\\SaleClothingManagement.Common.csproj"
             }
           }
         }
@@ -5955,7 +5955,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

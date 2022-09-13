@@ -1,5 +1,6 @@
 ﻿using SaleClothingManagement.Common.BLL;
 using SaleClothingManagement.Common.CustomerReq;
+using SaleClothingManagement.Common.Req;
 using SaleClothingManagement.Common.Rsp;
 using SaleClothingManagement.DAL;
 using SaleClothingManagement.DAL.Models;
@@ -58,7 +59,7 @@ namespace SaleClothingManagement.BLL
             var cus = id > 0 ? _rep.Read(id): _rep.Read(id);
 			if (cus == null)
             {
-                res.SetError("EZ103", "Employee not exist");
+                res.SetError("EZ103", "Customer not exist");
             }
             else
             {
@@ -87,7 +88,7 @@ namespace SaleClothingManagement.BLL
 
             if (cus == null)
 			{
-				res.SetError("EZ103", "Employee not exist");
+				res.SetError("EZ103", "Customer not exist");
 			}
 			else
 			{
@@ -98,8 +99,15 @@ namespace SaleClothingManagement.BLL
 				customer.Email = customerReq.Email;
 				customer.Fullname = customerReq.Fullname;
 				customer.Phone = customerReq.Phone;
+                customer.Active = customerReq.Active;
 				res = customerRep.UpdateCustomer(customer);
 			}
+            return res;
+        }
+        public SingleRsp ProspectCustomer(BaseStatsReq baseStatsReq)
+        {
+            var res = new SingleRsp();
+            res = customerRep.ProspectCustomer(baseStatsReq.Top, baseStatsReq.Month, baseStatsReq.Year);
             return res;
         }
     }

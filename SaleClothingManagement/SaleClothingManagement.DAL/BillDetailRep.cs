@@ -55,7 +55,7 @@ namespace SaleClothingManagement.DAL
             return res;
         }
 		
-		public SingleRsp CreateBillDetail(BillDetail billDetail)
+		public SingleRsp CreateBillDetail(BillDetail billDetail, Product product)
 		{
 			var res = new SingleRsp();
 			using (var context = new ClothingShopContext())
@@ -65,8 +65,9 @@ namespace SaleClothingManagement.DAL
 					try
 					{
 						var c = context.BillDetails.Add(billDetail);
-						context.SaveChanges();
-						tran.Commit();
+                        context.Update(product);
+                        context.SaveChanges();
+                        tran.Commit();
 					}
 					catch (Exception ex)
 					{
@@ -100,6 +101,32 @@ namespace SaleClothingManagement.DAL
             }
             return res;
         }
-		
+        public SingleRsp YearRevenue(int year)
+        {
+            var res = new SingleRsp();
+            using (var context = new ClothingShopContext())
+            {
+                var yearRevenue = (from BillDetail in context.BillDetails
+                                   where
+                                     BillDetail.Bill.CreatedDate.Value.Year == year
+                                   group new { BillDetail.Bill, BillDetail } by new
+                                   {
+                                       Month = (int?)BillDetail.Bill.CreatedDate.Value.Month,
+                                       Year = (int?)BillDetail.Bill.CreatedDate.Value.Year
+                                   } into g
+                                   orderby
+                                     g.Sum(p => p.BillDetail.Total) descending
+                                   select new
+                                   {
+                                       Thang = g.Key.Month,
+                                       Nam = g.Key.Year,
+                                       Tong_tien = (double?)g.Sum(p => p.BillDetail.Total)
+                                   }).ToList();
+                res.Data = yearRevenue;
+            }
+            return res;
+        }
+
+
     }
 }

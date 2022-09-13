@@ -20,7 +20,7 @@ namespace SaleClothingManagement.Web.Controllers
         {
             employeeSvc = new EmployeeSvc();
         }
-        [HttpGet("get-by-id")]
+        [HttpPost("get-by-id")]
         public IActionResult getEmployeeById([FromBody] SimpleReq req)
         {
             var res = new SingleRsp();
